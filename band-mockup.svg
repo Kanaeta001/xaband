@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <!-- Gold gradient for band -->
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#F5D547;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#D4A843;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#C9993A;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Shadow -->
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="400" fill="#f8fafc"/>
+  
+  <!-- Title -->
+  <text x="400" y="45" font-family="Inter, system-ui, sans-serif" font-size="24" font-weight="700" fill="#1a1a2e" text-anchor="middle">X-A BAND DESIGN CONCEPT</text>
+  
+  <!-- OPTION 1: Gold + Black -->
+  <g transform="translate(120, 100)">
+    <!-- Band shape -->
+    <ellipse cx="80" cy="100" rx="75" ry="95" fill="none" stroke="url(#goldGradient)" stroke-width="28" filter="url(#shadow)"/>
+    <!-- Black accent stripe -->
+    <ellipse cx="80" cy="100" rx="75" ry="95" fill="none" stroke="#1a1a2e" stroke-width="4"/>
+    <!-- QR code area -->
+    <rect x="50" y="55" width="60" height="60" rx="6" fill="#1a1a2e"/>
+    <rect x="56" y="61" width="48" height="48" rx="3" fill="white"/>
+    <!-- QR pattern simplified -->
+    <rect x="60" y="65" width="10" height="10" fill="#1a1a2e"/>
+    <rect x="74" y="65" width="10" height="10" fill="#1a1a2e"/>
+    <rect x="88" y="65" width="10" height="10" fill="#1a1a2e"/>
+    <rect x="60" y="79" width="10" height="10" fill="#1a1a2e"/>
+    <rect x="74" y="79" width="10" height="10" fill="#1a1a2e"/>
+    <rect x="88" y="79" width="10" height="10" fill="#1a1a2e"/>
+    <rect x="60" y="93" width="10" height="10" fill="#1a1a2e"/>
+    <rect x="74" y="93" width="10" height="10" fill="#1a1a2e"/>
+    <rect x="88" y="93" width="10" height="10" fill="#1a1a2e"/>
+    <!-- Label -->
+    <text x="80" y="240" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="600" fill="#1a1a2e" text-anchor="middle">GOLD + BLACK</text>
+    <text x="80" y="260" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#6b7280" text-anchor="middle">"Au" = Autism</text>
+  </g>
+  
+  <!-- OPTION 2: Blue Classic -->
+  <g transform="translate(320, 100)">
+    <defs>
+      <linearGradient id="blueGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" style="stop-color:#60A5FA;stop-opacity:1" />
+        <stop offset="50%" style="stop-color:#3B82F6;stop-opacity:1" />
+        <stop offset="100%" style="stop-color:#2563EB;stop-opacity:1" />
+      </linearGradient>
+    </defs>
+    <!-- Band shape -->
+    <ellipse cx="80" cy="100" rx="75" ry="95" fill="none" stroke="url(#blueGradient)" stroke-width="28" filter="url(#shadow)"/>
+    <!-- White accent -->
+    <ellipse cx="80" cy="100" rx="75" ry="95" fill="none" stroke="white" stroke-width="3"/>
+    <!-- QR code area -->
+    <rect x="50" y="55" width="60" height="60" rx="6" fill="#1e40af"/>
+    <rect x="56" y="61" width="48" height="48" rx="3" fill="white"/>
+    <!-- QR pattern -->
+    <rect x="60" y="65" width="10" height="10" fill="#1e40af"/>
+    <rect x="74" y="65" width="10" height="10" fill="#1e40af"/>
+    <rect x="88" y="65" width="10" height="10" fill="#1e40af"/>
+    <rect x="60" y="79" width="10" height="10" fill="#1e40af"/>
+    <rect x="74" y="79" width="10" height="10" fill="#1e40af"/>
+    <rect x="88" y="79" width="10" height="10" fill="#1e40af"/>
+    <rect x="60" y="93" width="10" height="10" fill="#1e40af"/>
+    <rect x="74" y="93" width="10" height="10" fill="#1e40af"/>
+    <rect x="88" y="93" width="10" height="10" fill="#1e40af"/>
+    <!-- Label -->
+    <text x="80" y="240" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="600" fill="#1a1a2e" text-anchor="middle">BLUE + WHITE</text>
+    <text x="80" y="260" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#6b7280" text-anchor="middle">Classic Autism Awareness</text>
+  </g>
+  
+  <!-- OPTION 3: Rainbow/Spectrum -->
+  <g transform="translate(520, 100)">
+    <defs>
+      <linearGradient id="rainbowGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" style="stop-color:#EF4444;stop-opacity:1" />
+        <stop offset="25%" style="stop-color:#F59E0B;stop-opacity:1" />
+        <stop offset="50%" style="stop-color:#22C55E;stop-opacity:1" />
+        <stop offset="75%" style="stop-color:#3B82F6;stop-opacity:1" />
+        <stop offset="100%" style="stop-color:#8B5CF6;stop-opacity:1" />
+      </linearGradient>
+    </defs>
+    <!-- Band shape -->
+    <ellipse cx="80" cy="100" rx="75" ry="95" fill="none" stroke="url(#rainbowGradient)" stroke-width="28" filter="url(#shadow)"/>
+    <!-- QR code area -->
+    <rect x="50" y="55" width="60" height="60" rx="6" fill="#1a1a2e"/>
+    <rect x="56" y="61" width="48" height="48" rx="3" fill="white"/>
+    <!-- QR pattern -->
+    <rect x="60" y="65" width="10" height="10" fill="#1a1a2e"/>
+    <rect x="74" y="65" width="10" height="10" fill="#1a1a2e"/>
+    <rect x="88" y="65" width="10" height="10" fill="#1a1a2e"/>
+    <rect x="60" y="79" width="10" height="10" fill="#1a1a2e"/>
+    <rect x="74" y="79" width="10" height="10" fill="#1a1a2e"/>
+    <rect x="88" y="79" width="10" height="10" fill="#1a1a2e"/>
+    <rect x="60" y="93" width="10" height="10" fill="#1a1a2e"/>
+    <rect x="74" y="93" width="10" height="10" fill="#1a1a2e"/>
+    <rect x="88" y="93" width="10" height="10" fill="#1a1a2e"/>
+    <!-- Label -->
+    <text x="80" y="240" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="600" fill="#1a1a2e" text-anchor="middle">RAINBOW</text>
+    <text x="80" y="260" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#6b7280" text-anchor="middle">The Spectrum</text>
+  </g>
+  
+  <!-- Note at bottom -->
+  <text x="400" y="360" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#6b7280" text-anchor="middle">Waterproof silicone • Comfortable daily wear • QR links to profile</text>
+  <text x="400" y="382" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#9ca3af" text-anchor="middle">Which speaks to you?</text>
+</svg>
