@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>X-A Band | Special Needs Identification Bracelets</title>
-    <meta name="description" content="Dignified identification bracelets for individuals with autism and special needs. QR-linked profiles help first responders, teachers, and the community understand and support.">
+    <title>X-A Band | Safety & Dignity for Special Needs</title>
+    <meta name="description" content="A simple bracelet with a powerful purpose. X-A Band helps autistic individuals and people with special needs communicate who they are — even when words fail.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -17,13 +17,13 @@
 
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            line-height: 1.6;
+            line-height: 1.7;
             color: #1a1a2e;
             background: #ffffff;
         }
 
         .container {
-            max-width: 1200px;
+            max-width: 1100px;
             margin: 0 auto;
             padding: 0 24px;
         }
@@ -31,7 +31,14 @@
         /* Header */
         header {
             padding: 20px 0;
-            border-bottom: 1px solid #eee;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(10px);
+            z-index: 100;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
         }
 
         .header-content {
@@ -41,10 +48,11 @@
         }
 
         .logo {
-            font-size: 24px;
-            font-weight: 700;
+            font-size: 22px;
+            font-weight: 800;
             color: #1a1a2e;
             text-decoration: none;
+            letter-spacing: -0.5px;
         }
 
         .logo span {
@@ -55,49 +63,62 @@
             background: #4f46e5;
             color: white;
             padding: 12px 24px;
-            border-radius: 8px;
+            border-radius: 50px;
             text-decoration: none;
-            font-weight: 500;
-            transition: background 0.2s;
+            font-weight: 600;
+            font-size: 14px;
+            transition: all 0.2s;
         }
 
         .nav-btn:hover {
             background: #4338ca;
+            transform: translateY(-1px);
         }
 
         /* Hero Section */
         .hero {
-            padding: 80px 0;
+            padding: 160px 0 100px;
             text-align: center;
+            background: linear-gradient(180deg, #f8faff 0%, #ffffff 100%);
         }
 
         .hero-badge {
             display: inline-block;
             background: #eef2ff;
             color: #4f46e5;
-            padding: 8px 16px;
+            padding: 8px 20px;
             border-radius: 50px;
-            font-size: 14px;
-            font-weight: 500;
-            margin-bottom: 24px;
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 28px;
+            letter-spacing: 0.5px;
         }
 
         .hero h1 {
-            font-size: clamp(36px, 5vw, 56px);
-            font-weight: 700;
-            line-height: 1.2;
+            font-size: clamp(40px, 5.5vw, 64px);
+            font-weight: 800;
+            line-height: 1.1;
             margin-bottom: 24px;
             color: #1a1a2e;
+            letter-spacing: -2px;
         }
 
         .hero h1 span {
             color: #4f46e5;
         }
 
-        .hero p {
-            font-size: 20px;
-            color: #64748b;
+        .hero-sub {
+            font-size: 22px;
+            color: #4b5563;
             max-width: 600px;
+            margin: 0 auto 20px;
+            font-weight: 500;
+        }
+
+        .hero-mission {
+            font-size: 17px;
+            color: #6b7280;
+            max-width: 550px;
             margin: 0 auto 40px;
         }
 
@@ -111,202 +132,428 @@
         .btn-primary {
             background: #4f46e5;
             color: white;
-            padding: 16px 32px;
-            border-radius: 8px;
+            padding: 18px 36px;
+            border-radius: 50px;
             text-decoration: none;
             font-weight: 600;
-            font-size: 18px;
-            transition: background 0.2s;
+            font-size: 16px;
+            transition: all 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
         }
 
         .btn-primary:hover {
             background: #4338ca;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 40px -10px rgba(79, 70, 229, 0.5);
         }
 
         .btn-secondary {
             background: white;
             color: #4f46e5;
-            padding: 16px 32px;
-            border-radius: 8px;
+            padding: 18px 36px;
+            border-radius: 50px;
             text-decoration: none;
             font-weight: 600;
-            font-size: 18px;
-            border: 2px solid #4f46e5;
+            font-size: 16px;
+            border: 2px solid #e5e7eb;
             transition: all 0.2s;
         }
 
         .btn-secondary:hover {
-            background: #eef2ff;
+            border-color: #4f46e5;
+            background: #f8faff;
+        }
+
+        /* Problem Section */
+        .problem {
+            padding: 100px 0;
+            background: #ffffff;
+        }
+
+        .problem-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-label {
+            display: inline-block;
+            color: #4f46e5;
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 16px;
+        }
+
+        .problem-header h2 {
+            font-size: clamp(32px, 4vw, 44px);
+            font-weight: 800;
+            letter-spacing: -1px;
+            margin-bottom: 20px;
+        }
+
+        .problem-header p {
+            font-size: 18px;
+            color: #6b7280;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .challenges {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 24px;
+            margin-bottom: 80px;
+        }
+
+        .challenge {
+            background: #f9fafb;
+            padding: 28px;
+            border-radius: 16px;
+            text-align: center;
+        }
+
+        .challenge-icon {
+            font-size: 32px;
+            margin-bottom: 12px;
+        }
+
+        .challenge h4 {
+            font-size: 16px;
+            font-weight: 600;
+            color: #374151;
+        }
+
+        /* Founder Story */
+        .founder-story {
+            background: linear-gradient(135deg, #4f46e5 0%, #6366f1 100%);
+            border-radius: 24px;
+            padding: 60px;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .founder-story::before {
+            content: '"';
+            position: absolute;
+            top: 20px;
+            left: 40px;
+            font-size: 200px;
+            opacity: 0.1;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+
+        .founder-story h3 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 24px;
+        }
+
+        .founder-story p {
+            font-size: 18px;
+            line-height: 1.8;
+            opacity: 0.95;
+            margin-bottom: 20px;
+            max-width: 800px;
+        }
+
+        .founder-story p:last-of-type {
+            margin-bottom: 0;
+        }
+
+        .founder-name {
+            margin-top: 32px;
+            font-weight: 600;
+            opacity: 0.9;
+        }
+
+        /* Product Section */
+        .product {
+            padding: 100px 0;
+            background: #f8fafc;
+        }
+
+        .product-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+
+        .product-text h2 {
+            font-size: clamp(32px, 4vw, 44px);
+            font-weight: 800;
+            letter-spacing: -1px;
+            margin-bottom: 24px;
+        }
+
+        .product-text > p {
+            font-size: 18px;
+            color: #6b7280;
+            margin-bottom: 32px;
+        }
+
+        .product-features {
+            list-style: none;
+        }
+
+        .product-features li {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+
+        .product-features li span {
+            color: #4f46e5;
+            font-size: 20px;
+            line-height: 1.4;
+        }
+
+        .product-visual {
+            background: linear-gradient(135deg, #e0e7ff 0%, #c7d2fe 100%);
+            border-radius: 24px;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 120px;
         }
 
         /* How It Works */
         .how-it-works {
-            padding: 80px 0;
-            background: #f8fafc;
+            padding: 100px 0;
+            background: #ffffff;
         }
 
-        .section-title {
+        .how-header {
             text-align: center;
-            font-size: 36px;
-            font-weight: 700;
-            margin-bottom: 16px;
+            margin-bottom: 70px;
         }
 
-        .section-subtitle {
-            text-align: center;
-            color: #64748b;
-            font-size: 18px;
-            margin-bottom: 60px;
+        .how-header h2 {
+            font-size: clamp(32px, 4vw, 44px);
+            font-weight: 800;
+            letter-spacing: -1px;
         }
 
         .steps {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(3, 1fr);
             gap: 40px;
         }
 
         .step {
             text-align: center;
-            padding: 32px;
-            background: white;
-            border-radius: 16px;
-            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+            padding: 40px 32px;
+            background: #f8fafc;
+            border-radius: 20px;
+            position: relative;
         }
 
         .step-number {
-            width: 60px;
-            height: 60px;
+            width: 56px;
+            height: 56px;
             background: #4f46e5;
             color: white;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 24px;
+            font-size: 22px;
             font-weight: 700;
-            margin: 0 auto 20px;
+            margin: 0 auto 24px;
         }
 
         .step h3 {
-            font-size: 20px;
+            font-size: 22px;
+            font-weight: 700;
             margin-bottom: 12px;
         }
 
         .step p {
-            color: #64748b;
+            color: #6b7280;
+            font-size: 16px;
         }
 
-        /* Features */
-        .features {
-            padding: 80px 0;
+        /* Benefits */
+        .benefits {
+            padding: 100px 0;
+            background: #f8fafc;
         }
 
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 32px;
+        .benefits-header {
+            text-align: center;
+            margin-bottom: 60px;
         }
 
-        .feature {
-            padding: 32px;
-            border: 1px solid #e2e8f0;
-            border-radius: 16px;
-            transition: box-shadow 0.2s;
-        }
-
-        .feature:hover {
-            box-shadow: 0 10px 40px -10px rgb(0 0 0 / 0.1);
-        }
-
-        .feature-icon {
-            font-size: 40px;
+        .benefits-header h2 {
+            font-size: clamp(32px, 4vw, 44px);
+            font-weight: 800;
+            letter-spacing: -1px;
             margin-bottom: 16px;
         }
 
-        .feature h3 {
-            font-size: 20px;
-            margin-bottom: 12px;
+        .benefits-header p {
+            font-size: 18px;
+            color: #6b7280;
         }
 
-        .feature p {
-            color: #64748b;
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 24px;
+        }
+
+        .benefit {
+            background: white;
+            padding: 36px;
+            border-radius: 20px;
+            border: 1px solid #e5e7eb;
+            transition: all 0.2s;
+        }
+
+        .benefit:hover {
+            border-color: #4f46e5;
+            box-shadow: 0 10px 40px -10px rgba(79, 70, 229, 0.15);
+            transform: translateY(-4px);
+        }
+
+        .benefit-icon {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .benefit h3 {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .benefit p {
+            color: #6b7280;
+            font-size: 15px;
+            line-height: 1.7;
         }
 
         /* CTA Section */
         .cta-section {
-            padding: 80px 0;
-            background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+            padding: 120px 0;
+            background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
             text-align: center;
             color: white;
         }
 
         .cta-section h2 {
-            font-size: 36px;
-            margin-bottom: 16px;
+            font-size: clamp(36px, 5vw, 52px);
+            font-weight: 800;
+            margin-bottom: 20px;
+            letter-spacing: -1px;
         }
 
         .cta-section p {
-            font-size: 18px;
-            opacity: 0.9;
-            margin-bottom: 32px;
+            font-size: 20px;
+            opacity: 0.8;
+            margin-bottom: 40px;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .btn-white {
             background: white;
             color: #4f46e5;
-            padding: 16px 32px;
-            border-radius: 8px;
+            padding: 20px 40px;
+            border-radius: 50px;
             text-decoration: none;
-            font-weight: 600;
-            font-size: 18px;
-            transition: transform 0.2s;
+            font-weight: 700;
+            font-size: 17px;
+            transition: all 0.2s;
             display: inline-block;
         }
 
         .btn-white:hover {
             transform: scale(1.05);
+            box-shadow: 0 20px 40px -10px rgba(0,0,0,0.3);
         }
 
         /* Footer */
         footer {
-            padding: 40px 0;
-            border-top: 1px solid #e2e8f0;
+            padding: 50px 0;
+            background: #1a1a2e;
             text-align: center;
+            color: white;
         }
 
         .footer-brand {
-            font-size: 20px;
-            font-weight: 700;
+            font-size: 22px;
+            font-weight: 800;
             margin-bottom: 8px;
         }
 
         .footer-brand span {
-            color: #4f46e5;
+            color: #818cf8;
         }
 
         .footer-tagline {
-            color: #64748b;
-            margin-bottom: 16px;
+            color: #9ca3af;
+            margin-bottom: 12px;
+            font-size: 15px;
         }
 
         .footer-parent {
             font-size: 14px;
-            color: #94a3b8;
+            color: #6b7280;
+            margin-bottom: 16px;
         }
 
         .footer-parent a {
-            color: #4f46e5;
+            color: #818cf8;
             text-decoration: none;
         }
 
+        .footer-copyright {
+            font-size: 13px;
+            color: #4b5563;
+        }
+
         /* Responsive */
-        @media (max-width: 768px) {
-            .hero {
-                padding: 60px 0;
+        @media (max-width: 900px) {
+            .product-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
             }
-            
-            .how-it-works, .features, .cta-section {
-                padding: 60px 0;
+
+            .product-visual {
+                height: 300px;
+                order: -1;
+            }
+
+            .steps {
+                grid-template-columns: 1fr;
+            }
+
+            .founder-story {
+                padding: 40px 28px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .hero {
+                padding: 140px 0 80px;
+            }
+
+            .problem, .product, .how-it-works, .benefits {
+                padding: 70px 0;
+            }
+
+            .cta-section {
+                padding: 80px 0;
             }
         }
     </style>
@@ -316,100 +563,180 @@
         <div class="container">
             <div class="header-content">
                 <a href="/" class="logo">X-A <span>Band</span></a>
-                <a href="#notify" class="nav-btn">Get Notified</a>
+                <a href="#join" class="nav-btn">Join Waitlist</a>
             </div>
         </div>
     </header>
 
+    <!-- HERO SECTION -->
     <section class="hero">
         <div class="container">
-            <div class="hero-badge">🚀 Coming Soon</div>
-            <h1>Identification with <span>Dignity</span></h1>
-            <p>Simple, waterproof bracelets with QR codes that help others understand and support individuals with autism and special needs.</p>
+            <div class="hero-badge">🛡️ Protecting Those Who Need It Most</div>
+            <h1>Safety Meets <span>Dignity</span></h1>
+            <p class="hero-sub">A simple bracelet with a powerful purpose.</p>
+            <p class="hero-mission">X-A Band helps autistic individuals and people with special needs communicate who they are — even when words fail. One scan tells the world: "Give me a moment. I'm worth the patience."</p>
             <div class="hero-cta">
-                <a href="#notify" class="btn-primary">Join the Waitlist</a>
-                <a href="#how-it-works" class="btn-secondary">Learn More</a>
+                <a href="#join" class="btn-primary">Join the Waitlist →</a>
+                <a href="#problem" class="btn-secondary">Learn More</a>
             </div>
         </div>
     </section>
 
-    <section class="how-it-works" id="how-it-works">
+    <!-- PROBLEM + EMOTION SECTION -->
+    <section class="problem" id="problem">
         <div class="container">
-            <h2 class="section-title">How It Works</h2>
-            <p class="section-subtitle">Simple for families. Helpful for everyone.</p>
+            <div class="problem-header">
+                <span class="section-label">The Reality</span>
+                <h2>The World Doesn't Always Understand</h2>
+                <p>Every day, millions of individuals with autism and special needs face moments where patience runs out — and no one's there to explain.</p>
+            </div>
+
+            <div class="challenges">
+                <div class="challenge">
+                    <div class="challenge-icon">😔</div>
+                    <h4>Misunderstanding</h4>
+                </div>
+                <div class="challenge">
+                    <div class="challenge-icon">⏱️</div>
+                    <h4>Impatience from strangers</h4>
+                </div>
+                <div class="challenge">
+                    <div class="challenge-icon">🚨</div>
+                    <h4>Difficult interactions</h4>
+                </div>
+                <div class="challenge">
+                    <div class="challenge-icon">🗣️</div>
+                    <h4>Trouble communicating</h4>
+                </div>
+                <div class="challenge">
+                    <div class="challenge-icon">💔</div>
+                    <h4>Parents can't always be there</h4>
+                </div>
+            </div>
+
+            <div class="founder-story">
+                <h3>Why We Built This</h3>
+                <p>I've watched my autistic son struggle to order food while a cashier grew visibly impatient. I've seen the confusion on his face when strangers didn't understand why he needed more time. I've stepped in more times than I can count to explain, "He just needs a moment."</p>
+                <p>But I can't always be there. No parent can.</p>
+                <p>That's why X-A Band exists — a simple way to tell the world who he is and what he needs, even when I'm not beside him. Not a medical tag that labels him. A band that protects him with dignity.</p>
+                <p>This isn't a product. It's a mission. And it started with watching my son — and refusing to accept that he has to navigate this world without backup.</p>
+                <div class="founder-name">— Kanaeta, Founder of X-A Corp</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUCT SECTION -->
+    <section class="product">
+        <div class="container">
+            <div class="product-content">
+                <div class="product-text">
+                    <span class="section-label">The Solution</span>
+                    <h2>One Band. Instant Understanding.</h2>
+                    <p>X-A Band is a comfortable, waterproof silicone bracelet with a unique QR code. When scanned, it shows a parent-controlled profile with everything someone needs to know to help — no app required.</p>
+                    
+                    <ul class="product-features">
+                        <li><span>✓</span> <strong>Waterproof silicone</strong> — survives showers, pools, everyday life</li>
+                        <li><span>✓</span> <strong>Unique QR code</strong> — links to a personal profile</li>
+                        <li><span>✓</span> <strong>Parent-controlled info</strong> — you decide what's shared</li>
+                        <li><span>✓</span> <strong>Communication tips</strong> — how to speak to them</li>
+                        <li><span>✓</span> <strong>Sensory needs</strong> — what to avoid, what helps</li>
+                        <li><span>✓</span> <strong>Emergency contact</strong> — always available</li>
+                        <li><span>✓</span> <strong>No app required</strong> — works on any smartphone</li>
+                        <li><span>✓</span> <strong>Looks like a normal bracelet</strong> — dignity, not diagnosis</li>
+                    </ul>
+                </div>
+                <div class="product-visual">
+                    ⌚
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="how-it-works">
+        <div class="container">
+            <div class="how-header">
+                <span class="section-label">Simple Process</span>
+                <h2>How It Works</h2>
+            </div>
             <div class="steps">
                 <div class="step">
                     <div class="step-number">1</div>
                     <h3>Get a Band</h3>
-                    <p>Comfortable, waterproof silicone bracelet with a unique QR code — designed to be worn daily.</p>
+                    <p>Comfortable, waterproof silicone bracelet with a unique QR code — designed to be worn every day, all day.</p>
                 </div>
                 <div class="step">
                     <div class="step-number">2</div>
                     <h3>Create a Profile</h3>
-                    <p>Add your loved one's name, communication tips, sensory needs, and emergency contact.</p>
+                    <p>Add their name, communication tips, sensory needs, and emergency contact. You control every detail.</p>
                 </div>
                 <div class="step">
                     <div class="step-number">3</div>
                     <h3>Scan When Needed</h3>
-                    <p>Anyone can scan the QR code to instantly understand how to help — no app required.</p>
+                    <p>Anyone can scan the QR code and instantly understand how to help — no app, no account, no friction.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="features">
+    <!-- BENEFITS -->
+    <section class="benefits">
         <div class="container">
-            <h2 class="section-title">Why X-A Band?</h2>
-            <p class="section-subtitle">Built by a parent, for parents.</p>
-            <div class="features-grid">
-                <div class="feature">
-                    <div class="feature-icon">💧</div>
+            <div class="benefits-header">
+                <span class="section-label">Why X-A Band</span>
+                <h2>Built by a Parent. For Parents.</h2>
+                <p>Every feature exists because we've lived the need for it.</p>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit">
+                    <div class="benefit-icon">💧</div>
                     <h3>Waterproof & Durable</h3>
-                    <p>Soft silicone that survives showers, pools, and everyday life. Comfortable enough to wear 24/7.</p>
+                    <p>Soft silicone that survives showers, pools, and everyday life. Comfortable enough to wear 24/7 without irritation.</p>
                 </div>
-                <div class="feature">
-                    <div class="feature-icon">🎯</div>
+                <div class="benefit">
+                    <div class="benefit-icon">🎯</div>
                     <h3>Dignity First</h3>
                     <p>Looks like a normal bracelet — not a medical tag. Your loved one's identity isn't their diagnosis.</p>
                 </div>
-                <div class="feature">
-                    <div class="feature-icon">⚡</div>
+                <div class="benefit">
+                    <div class="benefit-icon">⚡</div>
                     <h3>Instant Understanding</h3>
-                    <p>Teachers, police, cashiers — anyone can scan and immediately know how to help. No explanations needed.</p>
+                    <p>Teachers, police officers, cashiers — anyone can scan and immediately know how to help. No explanations needed.</p>
                 </div>
-                <div class="feature">
-                    <div class="feature-icon">🔒</div>
+                <div class="benefit">
+                    <div class="benefit-icon">🔒</div>
                     <h3>You Control the Info</h3>
-                    <p>Share only what you want. Update anytime. Emergency contact always available.</p>
+                    <p>Share only what you want. Update anytime. The profile is yours — we just host it securely.</p>
                 </div>
-                <div class="feature">
-                    <div class="feature-icon">🏫</div>
+                <div class="benefit">
+                    <div class="benefit-icon">🏫</div>
                     <h3>School Ready</h3>
-                    <p>Designed for institutional adoption. Help your school protect all students who need it.</p>
+                    <p>Designed for institutional adoption. Help your school protect all students who need it — at scale.</p>
                 </div>
-                <div class="feature">
-                    <div class="feature-icon">❤️</div>
+                <div class="benefit">
+                    <div class="benefit-icon">❤️</div>
                     <h3>Peace of Mind</h3>
-                    <p>Know that even when you're not there, your child can get the understanding they deserve.</p>
+                    <p>Know that even when you're not there, your child can get the understanding and patience they deserve.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="cta-section" id="notify">
+    <!-- CTA SECTION -->
+    <section class="cta-section" id="join">
         <div class="container">
-            <h2>Be the First to Know</h2>
-            <p>Join the waitlist and get early access when we launch.</p>
-            <a href="mailto:xtinctionagenda@outlook.com?subject=X-A%20Band%20Waitlist&body=I'm%20interested%20in%20X-A%20Band!%20Please%20add%20me%20to%20the%20waitlist." class="btn-white">Join Waitlist →</a>
+            <h2>Join the Mission</h2>
+            <p>Be part of the first wave of families protecting their loved ones — with dignity.</p>
+            <a href="mailto:xtinctionagenda@outlook.com?subject=X-A%20Band%20Waitlist&body=I'm%20interested%20in%20X-A%20Band!%20Please%20add%20me%20to%20the%20waitlist.%0A%0AMy%20name:%0ACity/State:%0A" class="btn-white">Join the Waitlist →</a>
         </div>
     </section>
 
     <footer>
         <div class="container">
             <div class="footer-brand">X-A <span>Band</span></div>
-            <p class="footer-tagline">Identification with dignity.</p>
-            <p class="footer-parent">A product of <a href="https://xtinctionagenda.com">X-A Corp</a></p>
-            <p class="footer-copyright" style="margin-top: 16px; font-size: 13px; color: #94a3b8;">© 2026 X-A Corp. All rights reserved.</p>
+            <p class="footer-tagline">Safety meets dignity.</p>
+            <p class="footer-parent">A product of <a href="https://xtinctionagenda.com">X-A Corp</a> — X-TINCTION AGENDA</p>
+            <p class="footer-copyright">© 2026 X-A Corp. All rights reserved.</p>
         </div>
     </footer>
 </body>
