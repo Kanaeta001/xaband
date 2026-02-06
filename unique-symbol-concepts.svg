@@ -1,0 +1,289 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 800">
+  <defs>
+    <!-- Holographic gradient -->
+    <linearGradient id="holo" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea" />
+      <stop offset="25%" style="stop-color:#764ba2" />
+      <stop offset="50%" style="stop-color:#f093fb" />
+      <stop offset="75%" style="stop-color:#4facfe" />
+      <stop offset="100%" style="stop-color:#43e97b" />
+    </linearGradient>
+    
+    <!-- Indigo to teal -->
+    <linearGradient id="indigoTeal" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4f46e5" />
+      <stop offset="100%" style="stop-color:#06b6d4" />
+    </linearGradient>
+    
+    <!-- Gold -->
+    <linearGradient id="gold" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#fcd34d" />
+      <stop offset="100%" style="stop-color:#b45309" />
+    </linearGradient>
+    
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1000" height="800" fill="#0a0a0a"/>
+  
+  <!-- Title -->
+  <text x="500" y="40" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700" fill="white" text-anchor="middle">ORIGINAL X-A BAND SYMBOLS</text>
+  <text x="500" y="65" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#6b7280" text-anchor="middle">Unique concepts that could only be yours</text>
+  
+  <!-- CONCEPT 1: "The Pause" - A moment of patience -->
+  <g transform="translate(80, 110)">
+    <text x="100" y="0" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700" fill="white" text-anchor="middle">1: THE PAUSE</text>
+    <text x="100" y="18" font-family="Inter, system-ui, sans-serif" font-size="10" fill="#6b7280" text-anchor="middle">"Give me a moment"</text>
+    
+    <!-- Symbol: Two vertical lines with a glowing center -->
+    <g transform="translate(50, 40)">
+      <!-- Left line -->
+      <rect x="20" y="10" width="8" height="60" rx="4" fill="url(#holo)" filter="url(#glow)"/>
+      <!-- Right line -->
+      <rect x="72" y="10" width="8" height="60" rx="4" fill="url(#holo)" filter="url(#glow)"/>
+      <!-- Center glow circle -->
+      <circle cx="50" cy="40" r="15" fill="url(#indigoTeal)" filter="url(#softGlow)"/>
+      <circle cx="50" cy="40" r="8" fill="white"/>
+    </g>
+    
+    <!-- On band -->
+    <rect x="10" y="140" width="180" height="40" rx="20" fill="url(#gold)"/>
+    <rect x="10" y="140" width="180" height="5" rx="2" fill="#1a1a1a"/>
+    <rect x="10" y="175" width="180" height="5" rx="2" fill="#1a1a1a"/>
+    <!-- Mini symbol -->
+    <rect x="25" y="152" width="3" height="18" rx="1" fill="url(#holo)"/>
+    <rect x="42" y="152" width="3" height="18" rx="1" fill="url(#holo)"/>
+    <circle cx="35" cy="161" r="5" fill="url(#indigoTeal)"/>
+    <!-- QR -->
+    <rect x="70" y="148" width="35" height="25" rx="4" fill="#1a1a1a"/>
+    <rect x="74" y="152" width="27" height="17" rx="2" fill="white"/>
+    
+    <text x="100" y="210" font-family="Inter, system-ui, sans-serif" font-size="10" fill="#9ca3af" text-anchor="middle">Pause symbol = patience</text>
+  </g>
+  
+  <!-- CONCEPT 2: "The Bridge" - Connection between worlds -->
+  <g transform="translate(310, 110)">
+    <text x="100" y="0" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700" fill="white" text-anchor="middle">2: THE BRIDGE</text>
+    <text x="100" y="18" font-family="Inter, system-ui, sans-serif" font-size="10" fill="#6b7280" text-anchor="middle">"Connecting understanding"</text>
+    
+    <!-- Symbol: Arc/bridge shape -->
+    <g transform="translate(30, 45)">
+      <path d="M10 70 Q70 0 130 70" fill="none" stroke="url(#holo)" stroke-width="10" stroke-linecap="round" filter="url(#glow)"/>
+      <!-- Two dots at base -->
+      <circle cx="15" cy="70" r="8" fill="url(#indigoTeal)"/>
+      <circle cx="125" cy="70" r="8" fill="url(#indigoTeal)"/>
+    </g>
+    
+    <!-- On band -->
+    <rect x="10" y="140" width="180" height="40" rx="20" fill="url(#gold)"/>
+    <rect x="10" y="140" width="180" height="5" rx="2" fill="#1a1a1a"/>
+    <rect x="10" y="175" width="180" height="5" rx="2" fill="#1a1a1a"/>
+    <!-- Mini bridge -->
+    <path d="M22 168 Q35 148 48 168" fill="none" stroke="url(#holo)" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="24" cy="168" r="3" fill="url(#indigoTeal)"/>
+    <circle cx="46" cy="168" r="3" fill="url(#indigoTeal)"/>
+    <!-- QR -->
+    <rect x="70" y="148" width="35" height="25" rx="4" fill="#1a1a1a"/>
+    <rect x="74" y="152" width="27" height="17" rx="2" fill="white"/>
+    
+    <text x="100" y="210" font-family="Inter, system-ui, sans-serif" font-size="10" fill="#9ca3af" text-anchor="middle">Bridge = connection</text>
+  </g>
+  
+  <!-- CONCEPT 3: "The Embrace" - Protective arms -->
+  <g transform="translate(540, 110)">
+    <text x="100" y="0" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700" fill="white" text-anchor="middle">3: THE EMBRACE</text>
+    <text x="100" y="18" font-family="Inter, system-ui, sans-serif" font-size="10" fill="#6b7280" text-anchor="middle">"Protected with dignity"</text>
+    
+    <!-- Symbol: Two curves embracing a center -->
+    <g transform="translate(35, 40)">
+      <!-- Left arm -->
+      <path d="M20 70 Q5 40 30 15" fill="none" stroke="url(#holo)" stroke-width="8" stroke-linecap="round" filter="url(#glow)"/>
+      <!-- Right arm -->
+      <path d="M110 70 Q125 40 100 15" fill="none" stroke="url(#holo)" stroke-width="8" stroke-linecap="round" filter="url(#glow)"/>
+      <!-- Center heart/person -->
+      <circle cx="65" cy="45" r="18" fill="url(#indigoTeal)" filter="url(#softGlow)"/>
+      <circle cx="65" cy="45" r="10" fill="white"/>
+    </g>
+    
+    <!-- On band -->
+    <rect x="10" y="140" width="180" height="40" rx="20" fill="url(#gold)"/>
+    <rect x="10" y="140" width="180" height="5" rx="2" fill="#1a1a1a"/>
+    <rect x="10" y="175" width="180" height="5" rx="2" fill="#1a1a1a"/>
+    <!-- Mini embrace -->
+    <path d="M22 168 Q17 158 27 152" fill="none" stroke="url(#holo)" stroke-width="3" stroke-linecap="round"/>
+    <path d="M48 168 Q53 158 43 152" fill="none" stroke="url(#holo)" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="35" cy="160" r="6" fill="url(#indigoTeal)"/>
+    <!-- QR -->
+    <rect x="70" y="148" width="35" height="25" rx="4" fill="#1a1a1a"/>
+    <rect x="74" y="152" width="27" height="17" rx="2" fill="white"/>
+    
+    <text x="100" y="210" font-family="Inter, system-ui, sans-serif" font-size="10" fill="#9ca3af" text-anchor="middle">Embrace = protection</text>
+  </g>
+  
+  <!-- CONCEPT 4: "The Spectrum" - Unique rainbow peak -->
+  <g transform="translate(770, 110)">
+    <text x="100" y="0" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700" fill="white" text-anchor="middle">4: THE SPECTRUM</text>
+    <text x="100" y="18" font-family="Inter, system-ui, sans-serif" font-size="10" fill="#6b7280" text-anchor="middle">"Every mind is unique"</text>
+    
+    <!-- Symbol: Layered arcs like a rainbow but forming an A shape -->
+    <g transform="translate(30, 40)">
+      <path d="M10 75 L65 15 L120 75" fill="none" stroke="#4f46e5" stroke-width="6" stroke-linecap="round" opacity="0.9"/>
+      <path d="M22 75 L65 28 L108 75" fill="none" stroke="#7c3aed" stroke-width="6" stroke-linecap="round" opacity="0.9"/>
+      <path d="M34 75 L65 41 L96 75" fill="none" stroke="#06b6d4" stroke-width="6" stroke-linecap="round" opacity="0.9"/>
+      <path d="M46 75 L65 54 L84 75" fill="none" stroke="#10b981" stroke-width="6" stroke-linecap="round" opacity="0.9"/>
+      <!-- Peak dot -->
+      <circle cx="65" cy="15" r="6" fill="white" filter="url(#glow)"/>
+    </g>
+    
+    <!-- On band -->
+    <rect x="10" y="140" width="180" height="40" rx="20" fill="url(#gold)"/>
+    <rect x="10" y="140" width="180" height="5" rx="2" fill="#1a1a1a"/>
+    <rect x="10" y="175" width="180" height="5" rx="2" fill="#1a1a1a"/>
+    <!-- Mini spectrum -->
+    <path d="M22 170 L35 155 L48 170" fill="none" stroke="#4f46e5" stroke-width="2" stroke-linecap="round"/>
+    <path d="M26 170 L35 159 L44 170" fill="none" stroke="#7c3aed" stroke-width="2" stroke-linecap="round"/>
+    <path d="M30 170 L35 163 L40 170" fill="none" stroke="#06b6d4" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="35" cy="155" r="2" fill="white"/>
+    <!-- QR -->
+    <rect x="70" y="148" width="35" height="25" rx="4" fill="#1a1a1a"/>
+    <rect x="74" y="152" width="27" height="17" rx="2" fill="white"/>
+    
+    <text x="100" y="210" font-family="Inter, system-ui, sans-serif" font-size="10" fill="#9ca3af" text-anchor="middle">Spectrum = uniqueness</text>
+  </g>
+  
+  <!-- CONCEPT 5: THE XA FUSION - Hidden X and A -->
+  <g transform="translate(80, 360)">
+    <text x="100" y="0" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700" fill="white" text-anchor="middle">5: XA FUSION</text>
+    <text x="100" y="18" font-family="Inter, system-ui, sans-serif" font-size="10" fill="#6b7280" text-anchor="middle">"Hidden X and A in one mark"</text>
+    
+    <!-- Symbol: Abstract fusion of X and A -->
+    <g transform="translate(40, 35)">
+      <!-- The X part -->
+      <path d="M20 20 L100 80" fill="none" stroke="url(#holo)" stroke-width="10" stroke-linecap="round" filter="url(#glow)"/>
+      <path d="M100 20 L55 55" fill="none" stroke="url(#holo)" stroke-width="10" stroke-linecap="round" filter="url(#glow)"/>
+      <!-- The A crossbar -->
+      <path d="M35 55 L85 55" fill="none" stroke="url(#indigoTeal)" stroke-width="8" stroke-linecap="round"/>
+      <!-- Center point -->
+      <circle cx="60" cy="50" r="8" fill="white"/>
+    </g>
+    
+    <!-- On band -->
+    <rect x="10" y="140" width="180" height="40" rx="20" fill="url(#gold)"/>
+    <rect x="10" y="140" width="180" height="5" rx="2" fill="#1a1a1a"/>
+    <rect x="10" y="175" width="180" height="5" rx="2" fill="#1a1a1a"/>
+    <!-- Mini XA fusion -->
+    <path d="M22 152 L45 172" fill="none" stroke="url(#holo)" stroke-width="3" stroke-linecap="round"/>
+    <path d="M45 152 L32 162" fill="none" stroke="url(#holo)" stroke-width="3" stroke-linecap="round"/>
+    <path d="M26 162 L40 162" fill="none" stroke="url(#indigoTeal)" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="34" cy="160" r="3" fill="white"/>
+    <!-- QR -->
+    <rect x="70" y="148" width="35" height="25" rx="4" fill="#1a1a1a"/>
+    <rect x="74" y="152" width="27" height="17" rx="2" fill="white"/>
+    
+    <text x="100" y="210" font-family="Inter, system-ui, sans-serif" font-size="10" fill="#9ca3af" text-anchor="middle">Brand hidden in abstract</text>
+  </g>
+  
+  <!-- CONCEPT 6: "The Beacon" - Light of understanding -->
+  <g transform="translate(310, 360)">
+    <text x="100" y="0" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700" fill="white" text-anchor="middle">6: THE BEACON</text>
+    <text x="100" y="18" font-family="Inter, system-ui, sans-serif" font-size="10" fill="#6b7280" text-anchor="middle">"A light of understanding"</text>
+    
+    <!-- Symbol: Radiating light/star -->
+    <g transform="translate(45, 35)">
+      <!-- Rays -->
+      <line x1="55" y1="10" x2="55" y2="30" stroke="url(#holo)" stroke-width="4" stroke-linecap="round" filter="url(#glow)"/>
+      <line x1="55" y1="80" x2="55" y2="100" stroke="url(#holo)" stroke-width="4" stroke-linecap="round" filter="url(#glow)"/>
+      <line x1="10" y1="55" x2="30" y2="55" stroke="url(#holo)" stroke-width="4" stroke-linecap="round" filter="url(#glow)"/>
+      <line x1="80" y1="55" x2="100" y2="55" stroke="url(#holo)" stroke-width="4" stroke-linecap="round" filter="url(#glow)"/>
+      <!-- Diagonal rays -->
+      <line x1="23" y1="23" x2="38" y2="38" stroke="url(#holo)" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+      <line x1="87" y1="23" x2="72" y2="38" stroke="url(#holo)" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+      <line x1="23" y1="87" x2="38" y2="72" stroke="url(#holo)" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+      <line x1="87" y1="87" x2="72" y2="72" stroke="url(#holo)" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+      <!-- Center -->
+      <circle cx="55" cy="55" r="20" fill="url(#indigoTeal)" filter="url(#softGlow)"/>
+      <circle cx="55" cy="55" r="10" fill="white"/>
+    </g>
+    
+    <!-- On band -->
+    <rect x="10" y="140" width="180" height="40" rx="20" fill="url(#gold)"/>
+    <rect x="10" y="140" width="180" height="5" rx="2" fill="#1a1a1a"/>
+    <rect x="10" y="175" width="180" height="5" rx="2" fill="#1a1a1a"/>
+    <!-- Mini beacon -->
+    <circle cx="35" cy="160" r="6" fill="url(#indigoTeal)"/>
+    <circle cx="35" cy="160" r="3" fill="white"/>
+    <line x1="35" y1="150" x2="35" y2="154" stroke="url(#holo)" stroke-width="2"/>
+    <line x1="35" y1="166" x2="35" y2="170" stroke="url(#holo)" stroke-width="2"/>
+    <line x1="25" y1="160" x2="29" y2="160" stroke="url(#holo)" stroke-width="2"/>
+    <line x1="41" y1="160" x2="45" y2="160" stroke="url(#holo)" stroke-width="2"/>
+    <!-- QR -->
+    <rect x="70" y="148" width="35" height="25" rx="4" fill="#1a1a1a"/>
+    <rect x="74" y="152" width="27" height="17" rx="2" fill="white"/>
+    
+    <text x="100" y="210" font-family="Inter, system-ui, sans-serif" font-size="10" fill="#9ca3af" text-anchor="middle">Beacon = guidance</text>
+  </g>
+  
+  <!-- MY RECOMMENDATION -->
+  <g transform="translate(540, 360)">
+    <rect x="0" y="-15" width="420" height="235" rx="16" fill="none" stroke="#4f46e5" stroke-width="2" opacity="0.5"/>
+    <text x="210" y="5" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="700" fill="#4f46e5" text-anchor="middle">⭐ RECOMMENDED COMBINATION</text>
+    
+    <text x="210" y="30" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#9ca3af" text-anchor="middle">The Embrace + Holographic + Gold/Black</text>
+    
+    <!-- Large combined concept -->
+    <g transform="translate(130, 50)">
+      <!-- Embrace symbol with holographic -->
+      <path d="M30 70 Q10 40 40 10" fill="none" stroke="url(#holo)" stroke-width="10" stroke-linecap="round" filter="url(#softGlow)"/>
+      <path d="M130 70 Q150 40 120 10" fill="none" stroke="url(#holo)" stroke-width="10" stroke-linecap="round" filter="url(#softGlow)"/>
+      <!-- Center -->
+      <circle cx="80" cy="45" r="22" fill="url(#indigoTeal)" filter="url(#softGlow)"/>
+      <circle cx="80" cy="45" r="12" fill="white"/>
+    </g>
+    
+    <!-- Full band mockup -->
+    <rect x="20" y="150" width="380" height="50" rx="25" fill="url(#gold)"/>
+    <rect x="20" y="150" width="380" height="7" rx="3" fill="#1a1a1a"/>
+    <rect x="20" y="193" width="380" height="7" rx="3" fill="#1a1a1a"/>
+    <!-- Holographic strip -->
+    <rect x="20" y="168" width="380" height="15" fill="url(#holo)" opacity="0.85"/>
+    
+    <!-- Embrace symbol on band -->
+    <g transform="translate(45, 160)">
+      <path d="M5 22 Q-2 12 10 2" fill="none" stroke="#1a1a1a" stroke-width="4" stroke-linecap="round"/>
+      <path d="M45 22 Q52 12 40 2" fill="none" stroke="#1a1a1a" stroke-width="4" stroke-linecap="round"/>
+      <circle cx="25" cy="13" r="8" fill="url(#indigoTeal)"/>
+      <circle cx="25" cy="13" r="4" fill="white"/>
+    </g>
+    
+    <!-- QR -->
+    <rect x="155" y="158" width="80" height="35" rx="6" fill="#1a1a1a"/>
+    <rect x="162" y="164" width="66" height="23" rx="3" fill="white"/>
+    
+    <!-- X-A text -->
+    <text x="320" y="182" font-family="Inter, system-ui, sans-serif" font-size="20" font-weight="800" fill="#1a1a1a">X-A</text>
+  </g>
+  
+  <!-- Footer explanation -->
+  <text x="500" y="620" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="white" text-anchor="middle">WHY "THE EMBRACE"?</text>
+  <text x="500" y="645" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#9ca3af" text-anchor="middle">• Two protective arms = parents, caregivers, community wrapping around the individual</text>
+  <text x="500" y="665" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#9ca3af" text-anchor="middle">• Center circle = the person being protected (glowing = valued, important)</text>
+  <text x="500" y="685" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#9ca3af" text-anchor="middle">• Works at any size • Unique to X-A • Meaningful story • Works with holographic</text>
+  
+  <!-- Bottom -->
+  <text x="500" y="760" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#374151" text-anchor="middle">© 2026 X-A Corp • Which symbol tells YOUR story?</text>
+</svg>
