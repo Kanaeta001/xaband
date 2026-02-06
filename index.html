@@ -547,6 +547,17 @@
             .founder-story {
                 padding: 40px 28px;
             }
+
+            .symbol-section > .container > div {
+                grid-template-columns: 1fr !important;
+                gap: 40px !important;
+                text-align: center;
+            }
+
+            .symbol-section svg {
+                width: 200px;
+                height: 200px;
+            }
         }
 
         @media (max-width: 600px) {
@@ -653,6 +664,77 @@
                 </div>
                 <div class="product-visual">
                     <img src="band-mockup.svg" alt="X-A Band design concepts - Gold, Blue, and Rainbow options">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- THE EMBRACE SYMBOL -->
+    <section class="symbol-section" style="padding: 100px 0; background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%); color: white;">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;">
+                <div style="display: flex; justify-content: center;">
+                    <!-- The Embrace Symbol -->
+                    <svg width="280" height="280" viewBox="0 0 200 200">
+                        <defs>
+                            <linearGradient id="embraceGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#667eea"/>
+                                <stop offset="25%" style="stop-color:#764ba2"/>
+                                <stop offset="50%" style="stop-color:#f093fb"/>
+                                <stop offset="75%" style="stop-color:#4facfe"/>
+                                <stop offset="100%" style="stop-color:#43e97b"/>
+                            </linearGradient>
+                            <linearGradient id="centerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#4f46e5"/>
+                                <stop offset="100%" style="stop-color:#06b6d4"/>
+                            </linearGradient>
+                            <filter id="symbolGlow">
+                                <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+                                <feMerge>
+                                    <feMergeNode in="coloredBlur"/>
+                                    <feMergeNode in="SourceGraphic"/>
+                                </feMerge>
+                            </filter>
+                        </defs>
+                        <!-- Left arm -->
+                        <path d="M40 140 Q10 100 50 50" fill="none" stroke="url(#embraceGrad)" stroke-width="16" stroke-linecap="round" filter="url(#symbolGlow)"/>
+                        <!-- Right arm -->
+                        <path d="M160 140 Q190 100 150 50" fill="none" stroke="url(#embraceGrad)" stroke-width="16" stroke-linecap="round" filter="url(#symbolGlow)"/>
+                        <!-- Center glow -->
+                        <circle cx="100" cy="100" r="35" fill="url(#centerGrad)" filter="url(#symbolGlow)"/>
+                        <circle cx="100" cy="100" r="18" fill="white"/>
+                    </svg>
+                </div>
+                <div>
+                    <span class="section-label" style="color: #818cf8;">Our Symbol</span>
+                    <h2 style="font-size: clamp(32px, 4vw, 44px); font-weight: 800; letter-spacing: -1px; margin-bottom: 24px;">The Embrace</h2>
+                    <p style="font-size: 18px; opacity: 0.9; margin-bottom: 32px;">Every X-A Band carries this symbol — a visual promise of protection and understanding.</p>
+                    
+                    <div style="display: flex; flex-direction: column; gap: 20px;">
+                        <div style="display: flex; align-items: flex-start; gap: 16px;">
+                            <span style="font-size: 24px;">🤲</span>
+                            <div>
+                                <strong style="font-size: 16px;">Two Protective Arms</strong>
+                                <p style="color: #9ca3af; font-size: 15px; margin-top: 4px;">Parents, caregivers, and community — wrapping around the individual with care.</p>
+                            </div>
+                        </div>
+                        <div style="display: flex; align-items: flex-start; gap: 16px;">
+                            <span style="font-size: 24px;">✨</span>
+                            <div>
+                                <strong style="font-size: 16px;">The Glowing Center</strong>
+                                <p style="color: #9ca3af; font-size: 15px; margin-top: 4px;">The person being protected — valued, important, and worthy of patience.</p>
+                            </div>
+                        </div>
+                        <div style="display: flex; align-items: flex-start; gap: 16px;">
+                            <span style="font-size: 24px;">🌈</span>
+                            <div>
+                                <strong style="font-size: 16px;">Holographic Colors</strong>
+                                <p style="color: #9ca3af; font-size: 15px; margin-top: 4px;">The spectrum of minds — every one unique, every one deserving of understanding.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <p style="font-size: 15px; color: #6b7280; margin-top: 32px; font-style: italic;">"When you see The Embrace, you know: this person is protected, valued, and worth your patience."</p>
                 </div>
             </div>
         </div>
